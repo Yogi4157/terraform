@@ -1,4 +1,4 @@
-resource "aws_instance" "fusionnex_ashish" {
+resource "aws_instance" "fusionnex_yogesh" {
     ami = var.ami_id
     instance_type = var.instance_type
     tags = {
