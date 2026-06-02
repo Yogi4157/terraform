@@ -1,9 +1,8 @@
 terraform {
-  backend "s3" {
-    bucket         = "yogesh-terraform-state-bucket"
-    key            = "terraform-project/terraform.tfstate"
-    region         = "us-east-1"
-    encrypt        = true
-
+  eackend "s3" {
+    bucket = "fusionnex-cicd-terraform-state-bucket-retro-01"
+    key = "ec2/terraform.tfstate"
+    region = "us-east-1"
+    dynamodb_table = "terraform-lock"
   }
 }
