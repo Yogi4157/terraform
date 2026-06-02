@@ -5,7 +5,7 @@ variable "region" {
 }
 variable "instance_type" {
     description = "Ec2 instance type"
-    default = "t2.micro"
+    default = "t3.small"
 
 }
 variable "ami_id" {
